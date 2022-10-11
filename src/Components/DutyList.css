@@ -1,13 +1,30 @@
 h1 {
-    color: chocolate;
+    color: #B30838;
 }
 
 p {
-    color: cornsilk;
+    color: #B30838;
 }
+
+h2 {
+    color: lightgoldenrodyellow;
+}
+
 
 .appContainer {
     display: flex;
     flex-direction: column;
-    background-color: #121F33;
+    background-color: #00234F;
+}
+.appHeading{
+    margin: 10px;
+    display: flex;
+    flex: max-content;
+    justify-content: space-between;
+}
+
+.weekController {
+    display: flex;
+    justify-content: space-between;
+
 }

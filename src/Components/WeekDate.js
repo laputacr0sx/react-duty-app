@@ -4,18 +4,17 @@ import { WEEKDATE } from "../data/DUMMY";
 
 import "./WeekDate.css";
 
-export default function WeekDate({ weekNumber }) {
-  console.log(moment().days("monday").isoWeeks(weekNumber));
-
+export default function WeekDate({ correspondingWeekDates }) {
   return (
     <div>
-      {weekNumber}
-      {WEEKDATE.map((date) => {
+      {correspondingWeekDates.map((date) => {
         return (
           <div className={"weekDate"} key={date}>
-            <div>{moment(date, "YYYYMMDD").format("DD/MM ddd")}</div>
-            <div>{"U15"}</div>
-            <div>{"dutyNumber"}</div>
+            <div className={"date"}>
+              {moment(date, "YYYYMMDD ddd").format("DD/MM ddd")}
+            </div>
+            <div className={"dutyPrefix"}>{"U15"}</div>
+            <div className={"dutyNumber"}>{"dutyNumber"}</div>
           </div>
         );
       })}
