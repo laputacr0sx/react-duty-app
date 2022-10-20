@@ -1,0 +1,13 @@
+h1 {
+    color: chocolate;
+}
+
+p {
+    color: cornsilk;
+}
+
+.appContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #121F33;
+}
