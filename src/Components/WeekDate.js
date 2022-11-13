@@ -1,7 +1,13 @@
 import moment from 'moment';
 
 export default function WeekDate({ correspondingWeekDates }) {
-	function handlerInput() {}
+	const clickHandler = () => {
+		console.log(`element clicked`);
+	};
+
+	function handlerInput() {
+		console.log(`element clicked`);
+	}
 
 	return (
 		<div>
@@ -9,9 +15,9 @@ export default function WeekDate({ correspondingWeekDates }) {
 				return (
 					<div
 						className={
-							'flex p-3 px-5 m-2 justify-between text-left bg-blue-400 text-gray-900 rounded-2xl'
+							'flex p-3 px-5 m-2 justify-between align-center text-left bg-blue-400 text-gray-900 rounded-2xl'
 						}
-						onClick={handlerInput}
+						onClick={clickHandler}
 						key={date}>
 						<div className={'font-mono'}>
 							{moment(date, 'YYYYMMDD ddd').format('DD/MM ddd')}
