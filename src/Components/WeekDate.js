@@ -15,7 +15,7 @@ export default function WeekDate({ correspondingWeekDates }) {
         return (
           <div
             className={
-              "align-center m-2 flex justify-between rounded-2xl bg-blue-400 p-3 px-5 text-left text-gray-900"
+              "align-center m-2 flex justify-between  rounded-2xl bg-blue-400 p-3 px-5 text-left text-gray-900"
             }
             onClick={clickHandler}
             key={date}
