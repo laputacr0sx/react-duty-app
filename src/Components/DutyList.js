@@ -47,6 +47,7 @@ export default function DutyList() {
       <div className="m-2 flex justify-between">
         <h1 className="text-red-700">Duty</h1>
         <div className="flex items-center justify-between">
+          <h2 className={"text-amber-100"}>{moment().year()}</h2>
           <IconButton size={"large"} onClick={decrement}>
             <RemoveIcon fontSize={"inherit"} color={"primary"} />
           </IconButton>

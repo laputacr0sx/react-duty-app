@@ -6,7 +6,7 @@ export default function WeekDate({ correspondingWeekDates }) {
   };
 
   function handlerInput() {
-    console.log(`element clicked`);
+    console.log(`duty Entered`);
   }
 
   return (
@@ -23,7 +23,7 @@ export default function WeekDate({ correspondingWeekDates }) {
             <div className={"font-mono"}>
               {moment(date, "YYYYMMDD ddd").format("DD/MM ddd")}
             </div>
-            <div className={"font-sans"}>{"U15"}</div>
+            <div className={"font-sans"}>{"Y15"}</div>
             <input
               type={"text"}
               onChange={handlerInput}
